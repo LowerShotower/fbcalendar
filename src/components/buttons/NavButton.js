@@ -1,12 +1,17 @@
 import React from 'react';
 import { Button } from 'antd';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NavButton = (props) => {
+const NavButton = ({ href, children, ...rest }) => {
+  console.log('btn');
   return (
-    <Button size='large' type='link' {...props}>
-      {props.children}
-    </Button>
+    <Link to={href}>
+      <Button size='large' type='link' {...rest}>
+        {children}
+      </Button>
+    </Link>
+
   );
 };
 

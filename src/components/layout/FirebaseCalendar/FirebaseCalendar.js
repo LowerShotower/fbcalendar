@@ -45,7 +45,6 @@ class FirebaseCalendar extends Component {
 
   render() {
     const { workTime, date, visible, updateDate, calendar } = this.props;
-    { console.log(workTime); }
     if (!calendar) return <Spin
       indicator={<Icon type="loading" style={{ fontSize: 40, color: 'black' }} spin />}
     />;

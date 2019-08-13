@@ -10,6 +10,7 @@ import {
   signIn
 } from '../../../store/actions';
 import { selectors } from '../../../store/reducers/selectors';
+import routes from '../../../constants/routes';
 
 class SignInForm extends React.Component {
 
@@ -27,7 +28,7 @@ class SignInForm extends React.Component {
     const { form: { getFieldDecorator }, loading, errorMessage } = this.props;
     // eslint-disable-next-line no-constant-condition
     if (false) {
-      return <Redirect to="/" />;
+      return <Redirect to={routes.HOME} />;
     } else {
       return (
         <Form onSubmit={this.handleSubmit} className="sign-in-form" >

@@ -10,6 +10,7 @@ import {
   signUp
 } from '../../../store/actions';
 import { selectors } from '../../../store/reducers/selectors';
+import routes from '../../../constants/routes';
 
 class SignUpForm extends React.PureComponent {
 
@@ -44,7 +45,7 @@ class SignUpForm extends React.PureComponent {
     const { form: { getFieldDecorator }, loading, errorMessage } = this.props;
     // eslint-disable-next-line no-constant-condition
     if (false) {
-      return <Redirect to="/" />;
+      return <Redirect to={routes.HOME} />;
     } else {
       return (
         <Form onSubmit={this.handleSubmit} className="sign-up-form" >
