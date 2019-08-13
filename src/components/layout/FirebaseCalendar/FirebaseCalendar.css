@@ -1,0 +1,85 @@
+#calendar {
+  width: 640px;
+  height: 480px;
+  margin: 100px auto;
+}
+
+.Calendar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Calendar-header {
+  height: 50px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.Calendar-header button {
+  width: 50px;
+  font-size: 20px;
+  border: 0;
+  background: transparent;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.Calendar-grid-item {
+  cursor: pointer;
+  position: relative;
+  flex: 0 14.28571%;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.Calendar-grid-item.bad{
+  background-color: #F45B69;
+} 
+.Calendar-grid-item.good{
+  background-color: #91CB3E;
+} 
+.Calendar-grid-item.normal{
+  background-color: #EBEBEB;
+} 
+
+.Calendar-grid-item--current {
+  font-weight: 700;
+}
+
+.Calendar-grid-item.nextMonth,
+.Calendar-grid-item.prevMonth {
+  color: #999;
+}
+
+.Calendar-grid-item:nth-child(7n + 1) {
+  border-left: 1px solid #ddd;
+}
+
+.Calendar-grid-item:nth-child(-n + 7) {
+  border-top: 1px solid #ddd;
+}
+
+.workHours {
+  position: absolute; 
+  font-weight: 600;
+  bottom: 5px;
+  right: 5px;
+  color: #303B4C;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1;
+  background-color: #FCFAF9;
+  border-radius: 3px;
+  padding:1px 2px;
+}

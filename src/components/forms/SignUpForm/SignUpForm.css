@@ -1,0 +1,32 @@
+ .sign-up-form {
+ 	max-width: 380px;
+ 	margin: 40px auto 40px;
+ }
+ 
+ .ant-form .login-form-forgot {
+ 	float: right;
+ }
+ 
+ .ant-form .login-form-button {
+ 	width: 100%;
+ }
+ 
+ .ant-form-item-label {
+ 	line-height: 1.2;
+ }
+ 
+ .ant-form-item.ant-row {
+ 	margin-bottom: 10px;
+ }
+ 
+ .ant-form-item.ant-row {
+ 	margin-bottom: 10px;
+ }
+ 
+ .ant-form-item.ant-row:last-child {
+ 	margin-top: 25px;
+ }
+
+ .ant-form-item-control .has-success,  .has-error {
+   position: relative;
+ }

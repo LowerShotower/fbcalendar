@@ -1,0 +1,12 @@
+.calendar-page {
+  padding:40px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.calendar-page h1,
+.calendar-page p
+ {
+  display: flex;
+  justify-content: center;
+}
