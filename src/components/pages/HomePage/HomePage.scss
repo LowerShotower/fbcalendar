@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.home-page h1,
-.home-page p
- {
-  display: flex;
-  justify-content: center;
+
+  & h1,
+  & p {
+    display: flex;
+    justify-content: center;
+  }
 }

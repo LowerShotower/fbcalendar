@@ -3,14 +3,14 @@ import { Redirect } from 'react-router-dom';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import './HomePage.css';
-import routes from '../../../constants/routes';
-import { selectors } from '../../../store/reducers/selectors';
+import './HomePage.scss';
+import routes from 'constants/routes';
+import { selectors } from 'store/reducers/selectors';
 
 class Home extends Component {
   render() {
     return (
-      <div className="home-page">
+      <div styleName="home-page">
         <h1>Hi</h1>
         <p>You are using Firebase Calendar</p>
       </div>

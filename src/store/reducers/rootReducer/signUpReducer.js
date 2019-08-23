@@ -1,5 +1,5 @@
 
-import { SIGN_UP_FIELDS, SIGN_UP } from '../../actions/types';
+import { SIGN_UP_FIELDS, SIGN_UP } from 'store/actions/types';
 
 const INITIAL_STATE = {
   fields: {

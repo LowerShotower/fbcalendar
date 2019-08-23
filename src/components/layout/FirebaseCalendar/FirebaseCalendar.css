@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.Calendar-grid-item {
+.calendar-grid-item {
   cursor: pointer;
   position: relative;
   flex: 0 14.28571%;
@@ -44,35 +44,36 @@
   font-size: 16px;
 }
 
-.Calendar-grid-item.bad{
+.calendar-grid-item__bad {
   background-color: #F45B69;
-} 
-.Calendar-grid-item.good{
-  background-color: #91CB3E;
-} 
-.Calendar-grid-item.normal{
-  background-color: #EBEBEB;
-} 
-
-.Calendar-grid-item--current {
-  font-weight: 700;
 }
 
-.Calendar-grid-item.nextMonth,
-.Calendar-grid-item.prevMonth {
+.calendar-grid-item__good {
+  background-color: #91CB3E;
+}
+
+.calendar-grid-item__normal {
+  background-color: #EBEBEB;
+}
+
+.calendar-grid-item__current {
+  font-weight: 700;
+}
+.calendar-grid-item.nextMonth,
+.calendar-grid-item.prevMonth {
   color: #999;
 }
 
-.Calendar-grid-item:nth-child(7n + 1) {
+.calendar-grid-item:nth-child(7n + 1) {
   border-left: 1px solid #ddd;
 }
 
-.Calendar-grid-item:nth-child(-n + 7) {
+.calendar-grid-item:nth-child(-n + 7) {
   border-top: 1px solid #ddd;
 }
 
 .workHours {
-  position: absolute; 
+  position: absolute;
   font-weight: 600;
   bottom: 5px;
   right: 5px;
@@ -81,5 +82,5 @@
   line-height: 1;
   background-color: #FCFAF9;
   border-radius: 3px;
-  padding:1px 2px;
+  padding: 1px 2px;
 }

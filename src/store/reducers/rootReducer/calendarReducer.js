@@ -1,4 +1,4 @@
-import { DATE, DATES, VISIBILITY, WORK_TIME } from '../../actions/types';
+import { DATE, DATES, VISIBILITY, WORK_TIME } from 'store/actions/types';
 import moment from 'moment';
 import 'moment/locale/nb';
 

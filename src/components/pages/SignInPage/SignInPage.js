@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { SignInForm } from '../../forms';
-import './SignInPage.css';
+import { SignInForm } from 'components/forms';
+import './SignInPage.scss';
 const LoginPage = () => {
   return (
     <Fragment>

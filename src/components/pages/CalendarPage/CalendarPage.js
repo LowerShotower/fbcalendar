@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import './CalendarPage.css';
-import routes from '../../../constants/routes';
-import { selectors } from '../../../store/reducers/selectors';
-import FirebaseCalendar from '../../layout/FirebaseCalendar';
+import './CalendarPage.scss';
+import routes from 'constants/routes';
+import { selectors } from 'store/reducers/selectors';
+import FirebaseCalendar from 'components/layout/FirebaseCalendar';
 
 class Home extends Component {
   render() {
     return (
-      <div className="calendar-page">
+      <div styleName="calendar-page">
         <FirebaseCalendar/>
       </div>
     );

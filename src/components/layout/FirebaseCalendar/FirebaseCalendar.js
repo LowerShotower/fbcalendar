@@ -6,9 +6,9 @@ import { Calendar } from 'react-calendar-component';
 import { Modal, Slider, InputNumber, Row, Col, Spin, Icon } from 'antd';
 import moment from 'moment';
 import 'moment/locale/nb';
-import { selectors } from '../../../store/reducers/selectors';
-import { fbAuth } from '../../../config/fbConfig';
-import { calendar, date, workTime, visibility } from '../../../store/actions';
+import { selectors } from 'store/reducers/selectors';
+import { fbAuth } from 'config/fbConfig';
+import { calendar, date, workTime, visibility } from 'store/actions';
 import './FirebaseCalendar.css';
 import Cell from './Cell';
 

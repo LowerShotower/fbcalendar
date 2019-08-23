@@ -1,5 +1,6 @@
 
-import { SIGN_IN_FIELDS, SIGN_IN } from "../../actions/types";
+import { SIGN_IN_FIELDS, SIGN_IN } from "store/actions/types";
+import { fbStore } from 'config/fbConfig';
 
 const INITIAL_STATE = {
   fields: {

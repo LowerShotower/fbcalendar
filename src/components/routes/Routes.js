@@ -2,9 +2,9 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { HomePage, SignInPage, SignUpPage, NotFoundPage, CalendarPage } from '../pages';
 import PrivateRoute from './PrivateRoute';
-import routes from '../../constants/routes';
+import routes from 'constants/routes';
 import { connect } from 'react-redux';
-import { selectors } from '../../store/reducers/selectors';
+import { selectors } from 'store/reducers/selectors';
 
 const Routes = (props) =>
   <Switch>

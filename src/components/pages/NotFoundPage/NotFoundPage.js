@@ -1,8 +1,8 @@
 import React from "react";
-import "./NotFoundPage.css";
+import "./NotFoundPage.scss";
 
 const NotFoundPage = () =>
-  <div className="NotFoundPage">
+  <div styleName="not-found">
     <h3>Sorry, page not found!</h3>
   </div>;
 

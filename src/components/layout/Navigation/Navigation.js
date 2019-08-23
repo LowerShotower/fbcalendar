@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from 'antd';
 import './Navigation.css';
-import { AvatarButton, NavButton } from '../../buttons';
+import { AvatarButton, NavButton } from 'components/buttons';
 import { connect } from 'react-redux';
 
-import { selectors } from '../../../store/reducers/selectors';
-import routes from '../../../constants/routes';
-import { signIn, signOut } from '../../../store/actions';
+import { selectors } from 'store/reducers/selectors';
+import routes from 'constants/routes';
+import { signIn, signOut } from 'store/actions';
 
 const SignInNavigation = (props) =>
   <div>

@@ -5,8 +5,8 @@ import { reduxFirestore } from 'redux-firestore';
 import { reactReduxFirebase } from 'react-redux-firebase';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import firebase, { rrfConfig } from './fbConfig';
-import rootReducer from '../store/reducers/rootReducer';
-import rootSaga from '../store/sagas';
+import rootReducer from 'store/reducers/rootReducer';
+import rootSaga from 'store/sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 

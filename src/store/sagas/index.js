@@ -34,16 +34,16 @@ function* watchFirebaseActions() {
 
 function* watchSaveDateToDb({ payload }) {
   const { date } = payload;
-  var userId = fbAuth.currentUser.uid;
-  const rf = yield fbStore.collection('calendars').doc(`${userId}`);
+  let userId = fbAuth.currentUser.uid;
+  const ref = yield fbStore.collection('calendars').doc(`${userId}`);
   const formattedDay = moment(date.day).format('YYYY-MM-DD');
-  const doc = yield db.getAll(rf);
+  const document = yield db.getAll(ref);
   const updatedDates = {
-    ...doc.data().dates,
+    ...document.data().dates,
     [formattedDay]: { day: formattedDay, hours: date.hours }
   };
-  yield db.setDates(rf, updatedDates);
-  const d = yield rf.get();
+  yield db.setDates(ref, updatedDates);
+  const d = yield ref.get();
 
 }
 

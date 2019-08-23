@@ -22,5 +22,38 @@
         "style": "css"
       }
     ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "src"
+        ],
+        "alias": {
+          "underscore": "lodash",
+        }
+      }
+    ],
+    [
+      "react-css-modules",
+      {
+        "generateScopedName": "[name]-[local]",
+        "webpackHotModuleReloading": true,
+        "autoResolveMultipleImports": false,
+        "handleMissingStyleName": "throw",
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss",
+            "plugins": [
+              [
+                "postcss-nested",
+                {
+                  "preserveEmpty": true
+                }
+              ]
+            ]
+          },
+        }
+      }
+    ]
   ]
 }

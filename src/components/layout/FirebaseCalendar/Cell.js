@@ -10,11 +10,11 @@ const Cell = (props) => {
     <div
       key={day.format()}
       className={cx({
-        'Calendar-grid-item': true,
-        'Calendar-grid-item--current': day.isSame(moment(), 'day'),
-        'bad': data && data.hours > 8,
-        'normal': data && data.hours <= 8 && data.hours >= 4,
-        'good': data && data.hours < 4
+        'calendar-grid-item': true,
+        'calendar-grid-item__current': day.isSame(moment(), 'day'),
+        'calendar-grid-item__bad': data && data.hours > 8,
+        'calendar-grid-item__normal': data && data.hours <= 8 && data.hours >= 4,
+        'calendar-grid-item__good': data && data.hours < 4
       })}
       onClick={e => onPickDate(day, data)}
     >

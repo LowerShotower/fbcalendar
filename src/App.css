@@ -1,0 +1,23 @@
+.Content {
+  flex: '1 0 auto';
+  display: 'flex';
+  justify-content: 'stretch';
+  align-items: 'stretch';
+  align-content: 'stretch';
+  padding: '0 50px';
+  background-color: '#fff'
+}
+.Footer {
+  text-align: 'center';
+}
+.Layout {
+  display: 'flex';
+  flex-direction: 'column';
+  align-items: 'stretch';
+  min-height: '100%'
+}
+.PageHeader {
+  display: 'flex';
+  justify-content: 'flex-end';
+  background-color: '#001529';
+}

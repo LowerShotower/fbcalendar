@@ -8,9 +8,9 @@ import './signUpForm.css';
 import {
   signUpFields,
   signUp
-} from '../../../store/actions';
-import { selectors } from '../../../store/reducers/selectors';
-import routes from '../../../constants/routes';
+} from 'store/actions';
+import { selectors } from 'store/reducers/selectors';
+import routes from 'constants/routes';
 
 class SignUpForm extends React.PureComponent {
 
